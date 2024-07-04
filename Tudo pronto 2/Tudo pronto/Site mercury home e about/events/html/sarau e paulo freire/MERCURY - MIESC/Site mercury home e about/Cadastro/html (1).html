@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro </title>
+    <style>
+     body{ 
+         font-family: Arial, Helvetica, sans-serif;
+         background-image: linear-gradient(to right, #018DB5, #0E3659); 
+     }
+     .box{
+        color:white ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        border-radius: 15px;
+        width: 29%;
+     }
+     fieldset{
+        border: 3px solid #D99923;
+     }
+     legend{
+        border: 1px solid #D99923;
+        padding: 10px;
+        text-align: center;
+        background-color: #D99923;
+        border-radius: 8px;
+         
+    }
+    .inputBox{
+        position: relative;
+    }
+    .inputUser{
+      background: none;
+      border: none;
+      border-bottom: 1px solid white ;
+      outline: none;
+      color: white;
+      font-size: 10px;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+    .caixa{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .inputUser:focus ~ .caixa,
+    .inputUser:valid ~ .caixa {
+        top: -20px;
+        font-size: 12px;
+        color: #D99923;
+    }
+    #submit{
+        background-image: linear-gradient(to right,#664300, #FFD700);  
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px; 
+    }
+    #submit:hover{
+        background-image: linear-gradient(to right, #018DB5, #6b3fa0);
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+        <fieldset>
+            <legend><b>Cadastro</b></legend>
+            <div class="inputBox">
+                <p>Escolha:</p>
+                <select id="escolha" class="select3">
+                    <option value="">Selecione</option> 
+                    <option value="1">Administrador</option>
+                    <option value="2">Usuário</option>
+                </select>
+              <br<>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="caixa"> Nome Completo</label>
+              </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="email" class="caixa"> E-mail Institucional</label>
+              </div>
+              <br>
+              <br>
+              <div class="inputBox">
+                <input type="password" name="senha" id="senha" class="inputUser" required>
+                <label for="senha" class="caixa">Senha</label>
+              <p>Sexo:</p>
+              <input type="radio" id="feminino" name="genero" volue=" feminino" required>
+              <label for="feminino">Feminino</label>
+              <br><br>
+              <input type="radio" id="masculino" name="genero" volue="masculino" required>
+              <label for="masculino">Masculino</label>
+              <br><br>
+              <input type="radio" id="outros" name="genero" volue=" outros" required>
+              <label for="outros">Outro</label>
+
+             <p>Selecione a sua Turma:</p>
+              <select id="turmas" class="select2">
+               <option value="">Selecione</option> 
+               <option value="1">1 DS A</option> 
+               <option value="2">1 DS B</option> 
+               <option value="3">2 DS A</option> 
+               <option value="4">2 DS B</option> 
+               <option value="5">3 DS A</option> 
+               <option value="6">3 DS B</option> 
+               <option value="7">1 ADM A</option> 
+               <option value="8">1 ADM B</option> 
+               <option value="9">2 ADM A</option> 
+               <option value="10">2 ADM B</option> 
+               <option value="11">3 ADM A</option> 
+               <option value="12">3 ADM B</option>
+               <option value="13">Sou Administrador</option>  
+               </select>
+               <br><br>
+            <input type="submit" name="submit" id="submit"> 
+            </fieldset> 
+            
+        </form>
+    </div>
+    
+    
+</body>
+</html>

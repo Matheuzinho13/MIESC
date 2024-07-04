@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+       body{
+        margin: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+       } 
+       .main-login{
+        width: 100vw;
+        height: 100vh; 
+        background-color:#0E3659;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .left-login{
+        width:50vw;
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+       }
+       .left-login > h1{
+        font-size: 45px;
+        color: #D99923;
+       }
+       .right-login{
+        width:50vw;
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .card-login{
+        width: 50%;
+        height: 45%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        padding: 40px, 45px;
+        background:#018DB5 ;
+        border-radius: 20px;
+        box-shadow: 0px 50px 60px #00000056;
+       }
+       .card-login > h1{
+        color: rgb(7, 19, 68);
+        font-weight:800;
+        margin: 0;
+       }
+       .textfield{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin:10px 0px;
+       }
+       .textfield > input{
+        width:100%;
+        border: none;
+        border-radius: 40px;
+        padding: 20px;
+        background:#43b1cf;
+        color:#f0ffffde;
+        font-size:12pt;
+        box-shadow: 0px, 10px, 40px #00000056;
+        outline: none;
+        box-sizing: border-box;
+       }
+       .textfield > label{
+        font-size: 20px;
+        color:#f0ffffde;
+        margin-bottom: 10px;
+       }
+       .textfield > input::placeholder{
+          color: rgb(39, 53, 180);
+       }
+       #submit{
+        background-image: linear-gradient(to right, #076079, #6b3fa0);  
+        width: 95%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 25px; 
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    #submit:hover{
+        background-image: linear-gradient(to right,#664300, #FFD700);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            
+            <h1>Venha para o nosso time<br><br>ENTRE NO MIESC</h1>
+            <img src="img cadastro/entre.png" height="650px" width="770px">
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN </h1>
+				<br>
+               <div class="textfield">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" placeholder="Usuário">
+               </div>
+                <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+             </div>
+             <br><br><br>
+        <input type="submit" name="submit" id="submit">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 2</title>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nome = urlParams.get('nome');
+        const email = urlParams.get('email');
+        
+        document.body.innerHTML = `<p>Nome: ${nome}</p><p>Email: ${email}</p>`;
+    </script>
+</body>
+</html>
